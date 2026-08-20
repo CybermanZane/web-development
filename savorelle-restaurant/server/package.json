@@ -1,0 +1,25 @@
+{
+  "name": "maison-velora-api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ../node_modules/tsx/dist/cli.mjs watch index.ts",
+    "build": "node ../node_modules/typescript/bin/tsc -p tsconfig.json",
+    "typecheck": "node ../node_modules/typescript/bin/tsc -p tsconfig.json --noEmit",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.16.3",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.2",
+    "@types/pg": "^8.15.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.2"
+  }
+}
